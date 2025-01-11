@@ -834,6 +834,7 @@ footer {
         justify-items: center;
         margin: 0;
         width: fit-content;
+        text-align: center;
     }   
     
     .leftside b {
