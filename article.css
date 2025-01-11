@@ -626,4 +626,24 @@ footer {
     input[type="range"] {
         width: 200px;
     }
+
+    .runvideo {
+        width: 350px;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .runimage {
+        width: 300px;
+        height: auto;
+        align-items: center;
+    }
+
+    .vid {
+        display: flex;
+        justify-content: center;
+    }
 }
