@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheArticle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="header">
+        <div class="headerleft">
+            <a href="index.html">
+                <svg class="svgg" role="img" viewBox="0 0 125 43" aria-labelledby="title" height="43" width="125">
+                    <text x="6" y="21" font-family="Poppins" font-size="19" font-weight="bold" fill="black">The</text>
+                    <text x="43" y="21" font-family="Poppins" font-size="19" font-weight="bold" fill="black">Article</text>
+                    <rect x="18" y="28" width="73" height="14" fill="none" stroke="black" stroke-width="1" />
+                    <rect x="20" y="30" width="20" height="10" fill="black" />
+                    <text x="24" y="37.8" font-family="Poppins" font-size="8" font-weight="bold" fill="white">MY</text>
+                    <text x="43" y="37.8" font-family="Poppins" font-size="8.1" font-weight="bold" fill="black">EXISTENCE</text>
+                  </svg>
+            </a>
+            
+            <input type="text" class="searchbar" placeholder="Search">
+        </div>
+        
+        <nav class="navig">
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#popular">Popular</a>
+                <a href="#articles">Articles</a>
+                <a href="#university">University</a>
+                <a href="#contact">Contact Us</a>
+                <a href="login.html" class="proftxt">Profile</a>
+                <a href="login.html"><i class="fa fa-user-circle profile-icon"></i></a>
+            </ul>
+        </nav>
+        
+
+        <div id="menu-btn" class="fa fa-bars"></div>
+
+        
+    </header>
+
+
+
+    <div class="container" id="home">
+        <!--Left-->
+        <div class="first">
+            <img src="images/front.gif" alt="">
+            <aside class="leftside">
+                <b>The Essence of My Life</b>
+                <p>Amid the hustle and bustle, the moments that truly shape my life are often the simplest and most meaningful. Each cherished aspect of my life holds a special place in my heart, defining who I am in unique ways.</p>
+                <button onclick="openArticle('#popular')">Read more</button>
+                <button onclick="openArticle('index2.html')">Click me to listen to music while reading</button>
+            </aside>
+        </div>
+
+
+
+
+        <div class="popular" id="popular">
+            <h1 class="populartitle">POPULAR READS</h1>
+
+            <div class="pop">
+                <div class="popeach">
+                    <img src="images/taylor swift.jpg" alt="">
+                    <h3>The Power of Taylor Swift's Words in My Life</h3>
+                    <p>“Her music is not just entertainment—it's a mirror to life's emotions.”</p>
+                    <button onclick="openArticle('swift.html')"><span>Read More</span></button>
+                </div>
+
+                <div class="popeach">
+                    <img src="images/canteen1.jpg" alt="">
+                    <h3>Canteen Chronicles: Bistro Shenanigans</h3>
+                    <p>"A place to enjoy food, bond with friends, and maintain cleanliness.”</p>
+                    <button onclick="openArticle('canteen.html')"><span>Read More</span></button>
+                </div>
+
+                <div class="popeach">
+                    <img src="images/otto.jpg" alt="">
+                    <h3>Life Lessons from A Man Called Otto</h3>
+                    <p>“Behind every grumpy demeanor lies a story worth knowing.”</p>
+                    <button onclick="openArticle('otto.html')"><span>Read More</span></button>
+                </div>
+            </div>
+        </div>
+
+        
+        <h1 class="articletitle" id="articles">ARTICLES</h1>
+
+        <div class="second">
+     
+        <!--Main-->
+        <main class="maincontent">
+
+            <section class="article">
+                <img src="images/run.jpg" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('run.html')">Track and Field: My Favorite Sport</h2>
+                    <p>“The race is not always to the swift, but to those who keep running.”</p>
+                    <div class="article-meta">
+                        <span>Sep 27</span>
+                        <span>101 likes</span>
+                        <span>4 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/foods.png" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">Shawarma and Seafood: A Feast for the Soul</h2>
+                    <p>“Food is love, and these dishes are my comfort and delight.”</p>
+                    <div class="article-meta">
+                        <span>Sep 26</span>
+                        <span>300 likes</span>
+                        <span>12 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/Bantayan Island in Cebu.jpg" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">Why Bantayan Island Feels Like Home</h2>
+                    <p>“Where the sun kisses the sea, and peace finds a home.”</p>
+                    <div class="article-meta">
+                        <span>Sep 21</span>
+                        <span>534 likes</span>
+                        <span>36 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--Right-->
+        <aside class="rightside">
+            <section class="article">
+                <img src="images/music.jpg" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">The Soundtrack of My Life: How Music Shapes My World</h2>
+                    <p>“Every note tells a story, and every lyric feels like home.”</p>
+                    <div class="article-meta">
+                        <span>Sep 18</span>
+                        <span>200 likes</span>
+                        <span>8 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/otto.jpg" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('otto.html')">Life Lessons from a Man Called Otto</h2>
+                    <p>“Sometimes, the grumpiest hearts hold the most beautiful stories.”</p>
+                    <div class="article-meta">
+                        <span>Oct 2</span>
+                        <span>262 likes</span>
+                        <span>9 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/cats.jpg" alt="" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">Feline Mystique: The Quiet Power of Cats</h2>
+                    <p>“There's something magical about the way cats make a house feel like home.”</p>
+                    <div class="article-meta">
+                        <span>Sep 1</span>
+                        <span>862 likes</span>
+                        <span>29 comments</span>
+                    </div>
+                </div>
+            </section>
+
+        </aside>
+         </div>
+
+
+    </div>
+
+    <div class="university" id="university">
+        <h1 class="articletitle" id="articles">UNIVERISTY</h1>
+
+        <div class="second">
+     
+        <!--Main-->
+        <main class="maincontent">
+
+            <section class="article">
+                <img src="images/Blood Donation Drive.JPG" alt="Blood Donation Drive" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('blood.html')">CebuTech Danao Transforms Lives Through Blood Donation Drives</h2>
+                    <p>CebuTech Danao Campus participated in the Lifeline project, aiming to transform lives by hosting regular blood donation drives.</p>
+                    <div class="article-meta">
+                        <span>Sep 27</span>
+                        <span>101 likes</span>
+                        <span>4 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/ICAMEROB 2024.JPG" alt="ICAMEROB 2024" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('icamerob.html')">CebuTech Danao Hosts 6th ICAMEROB 2024</h2>
+                    <p>The 6th International Conference on Automation, Mechatronics, and Robotics (ICAMEROB) 2024 kicks off at CebuTech Danao, gathering experts from across the globe.</p>
+                    <div class="article-meta">
+                        <span>Sep 26</span>
+                        <span>300 likes</span>
+                        <span>12 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/Kampo Kalikasan.JPG" alt="15th Kampo Kalikasan" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">CebuTech Danao Hosts 15th Kampo Kalikasan</h2>
+                    <p>The 15th annual Kampo Kalikasan event took place at CebuTech Danao, focusing on environmental conservation and sustainability.</p>
+                    <div class="article-meta">
+                        <span>Sep 21</span>
+                        <span>534 likes</span>
+                        <span>36 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!--Right-->
+        <aside class="rightside">
+            <section class="article">
+                <img src="images/RFID System Opening.JPG" alt="RFID System Opening" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">CebuTech Danao Launches RFID System with Ribbon-Cutting</h2>
+                    <p>A ribbon-cutting ceremony marks the official opening of CebuTech Danao's new RFID system, enhancing campus security and access control.</p>
+                    <div class="article-meta">
+                        <span>Sep 18</span>
+                        <span>200 likes</span>
+                        <span>8 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/Digital Thumbprint Program.JPG" alt="Digital Thumbprint Program" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">Globe Telecom Launches Digital Thumbprint at CebuTech Danao</h2>
+                    <p>Globe Telecom introduced the Digital Thumbprint Program at CebuTech Danao, educating students on responsible digital citizenship and online safety.</p>
+                    <div class="article-meta">
+                        <span>Oct 2</span>
+                        <span>262 likes</span>
+                        <span>9 comments</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <img src="images/Sug-alapas.JPG" alt="Sug-alapas 2024" class="article-image">
+                <div class="articlecontent">
+                    <h2 onclick="openArticle('')">Sug-alapas sa CTU Danao!</h2>
+                    <p>A vibrant celebration showcasing CebuTech Danao's cultural heritage and achievements under the local slogan “Sug-alapas.”</p>
+                    <div class="article-meta">
+                        <span>Sep 1</span>
+                        <span>862 likes</span>
+                        <span>29 comments</span>
+                    </div>
+                </div>
+            </section>
+
+        </aside>
+         </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="leftcontact">
+            <div class="gith">
+                <h3>Send us a message</h3>
+            </div>
+            <form>
+                <div class="inputbox">
+                    <h3>Name</h3>
+                    <input type="text" name="name" placeholder="Name" required="">
+                </div>
+                <div class="inputbox">
+                    <h3>Email</h3>
+                    <input type="email" name="email" placeholder="Email" required="">
+                </div>
+                <div class="inputbox">
+                    <h3>Subject</h3>
+                    <input type="text" name="subject" placeholder="Subject" required="">
+                </div>
+                <div class="inputbox">
+                    <h3>Message</h3>
+                    <textarea name="" id="" cols="71" rows="4" placeholder="Type here"></textarea>
+                </div>
+                <button>Send Now</button>
+            </form>
+        </div>
+
+        <div class="rightcontact">
+            <div class="git">
+                <h2>Get In Touch</h2>
+                <p>Feel free to reach out with any questions or inquiries. We're here to assist and look forward to connecting with you.</p>
+            </div>
+            <div class="rcontacts">
+                <div class="rc">
+                    <div class="contacts">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h3>Phone</h3>
+                        <p>+63 926 234 5678</p>
+                    </div>
+                    <div class="contacts">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <h3>Email</h3>
+                            <p>support@site.com</p>
+                    </div>
+                </div>
+                <div class="rcc">
+                    <div class="contacts">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <h3>Whatsapp</h3>
+                        <p>+63 926 234 5678</p>
+                    </div>
+                    <div class="contacts">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h3>Location</h3>
+                        <p>Sabang, Danao City, Cebu 6007</p>
+                    </div>
+                </div>
+            </div>
+            <div class="socials">
+                <h3>Follow our social media</h3>
+                <a href="https://www.facebook.com" class="socmeds"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" class="socmeds"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.x.com" class="socmeds"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" class="socmeds"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    
+    <footer>&copy; 2024 Pia Flor Monteron. All Rights Reserved.</footer>
+
+<script src="main.js"></script>    
+</body>
+</html>

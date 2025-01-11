@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: Poppins;
+    font-weight: 450;
+    background-color: #fafaf9;
+    color: #451a03;
+} 
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    height: 42rem;
+    box-shadow: 5px 5px 10px #00000033;
+    margin: 3.5% 10% 3.5% 10%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.leftcontact {
+    width: 55%;
+    height: 42rem;
+    padding: 5%;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(255, 255, 255, 0.449);
+    color: #451a03;
+    align-content: center;
+    background-image: url(images/lcontact.png);
+}
+
+.git {
+    padding: 20px;
+    text-align: center;
+}
+
+.git h2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.gith h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.gith i {
+    font-size: 15px;
+    width: 3rem;
+    padding: 13px;
+    margin: 1px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 100%;
+    text-align: center;
+}
+
+.gith p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+}
+
+.icons i:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+    cursor: pointer;
+}
+
+.git p {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 70px 0 70px;
+}
+
+.inputtt {
+    justify-items: center;
+    margin: 10px;
+}
+
+.inputbox {
+    height: 50px;
+    color: #451a03;
+    margin-bottom: 10px;
+}
+
+.inputbox input {
+    width: 400px;
+    height: 50px;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.120);
+    border-radius: 10px;
+    background-color: #f5f5f4;
+    font-family: poppins;
+}
+
+::placeholder {
+    color: #7777774b;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.forgot {
+    text-align: center;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: #451a03;
+    font-size: 13px;
+}
+
+.forgot a:hover {
+    text-shadow: 5px 5px 10px #746d695b;
+    text-decoration: underline;
+    color: #b45309;
+}
+
+.form button {
+    margin: 0 20% 0 34.5%;
+    margin-top: 10px;
+    width: 30%;
+    height: 38px;
+    font-weight: 550;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #451a03;
+    background-color:#f5f5f4;
+    cursor: pointer;
+    border: 1px solid #1b0b0209;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+
+.rightcontact {
+    width: 45%;
+    padding: 2%;
+    border-radius: 10px 0 0 10px;
+    align-content: center;
+    background-image: url(images/bgcontact.png);
+}
+
+.rightcontact button {
+    margin: 3% 25% 5% 29.5%;
+    width: 40%;
+    height: 38px;
+    justify-content: center;
+    font-weight: 550;
+    padding: 10px;
+    border-radius: 10px;
+    color: #451a03;
+    cursor: pointer;
+    border: 2px solid #451a03;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rightcontact button:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+.signupp {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 7px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px) {
+    .git h2 {
+        padding: 5px;
+        font-size: 38px;
+    }
+
+    .git p {
+        padding: 5px 20px 5px 20px;
+    }
+
+    .inputbox input {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 895px) {
+    .inputbox input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .contact {
+        height: fit-content;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .rightcontact {
+        display: none;
+    }
+
+    .signupp {
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .signupp p {
+        padding-right: 3px;
+    }
+
+    .signupp a {
+        text-decoration: none;
+        color: #451a03;
+    }
+
+    .leftcontact, .rightcontact {
+        height: 25rem;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-top: 27px;
+        box-shadow: 5px 5px 10px #00000033;
+    }
+
+    .contacts i, .socials i{
+        font-size: 15px;
+    }
+
+    .inputbox h3, .git p, .contacts p {
+        font-size: 11px;
+    }
+
+    .gith p {
+        font-size: 11px;
+        padding: 0;
+    }
+
+    .inputbox {
+        margin-bottom: 0;
+    }
+
+    .inputbox input {
+        height: 10px;
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    textarea {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .git h2, .gith h3 {
+        font-size: 20px;
+    }
+
+    .git {
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .rcontacts {
+        padding-bottom: 10px;
+    }
+
+    .contacts {
+        padding: 5px;
+        width: 90%;
+        height: 6rem;
+    }
+
+    .contacts i {
+        padding-bottom: 0;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .gith i {
+        font-size: 11px;
+        width: 2.5rem;
+        padding: 11.5px;
+        margin: 2px;
+        border: 1px solid rgb(128, 128, 128);
+        border-radius: 100%;
+        text-align: center;
+    }
+    
+    .icons {
+        padding: 8px 0 10px 0;
+    }
+}
+

@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: Poppins;
+    font-weight: 450;
+    background-color: #fafaf9;
+    color: #451a03;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fafaf9;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.236);
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+}
+
+.svgg:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.searchbar {
+    padding: 5px 5px 5px 15px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+.navig ul a:hover {
+    color: #b45309;
+    cursor: pointer;
+    text-shadow: 5px 5px 10px #d6d3d160;
+}
+
+.navig ul {
+    display: flex;
+    list-style-type: none ;
+}
+
+.navig ul a {
+    color: #451a03;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    font-size: 25px;  
+    color: #451a03;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.profile-icon:hover {
+    color: #b45309;
+    cursor: pointer;
+}
+
+.proftxt {
+    display: none;
+}
+
+/* Container */
+.container {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.first {
+    display: flex;
+    padding: 20px 30px 25px 20px;
+    margin: 80px 30px 55px 50px;
+}
+
+.first img {
+    width: 55%;
+    border-radius: 15px;
+}
+
+
+/* LEFT */
+.leftside {
+    width: 70%;
+    background-color: #fafaf9;
+    padding: 20px 30px 15px 50px;
+    margin: 20px;
+    margin-top: 150px;
+}
+.leftside p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.leftside b {
+    font-size: 45px;
+}
+
+.leftside button {
+    width: fit-content;
+    height: 40px;
+    justify-content: center;
+    font-weight: 550;
+    display: flex;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: #451a03;
+    background-color: #d6d3d1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leftside button:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+
+/* POPULAR READS */
+.popular {
+    padding: 105px;
+}
+
+.populartitle {
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 2.5rem;
+}
+
+.pop {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.pop img {
+    height: 12rem;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.popeach {
+    width: 28%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f4;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.050);
+}
+
+.popeach h3 {
+    padding: 20px;
+}
+
+.popeach p {
+    padding: 0 15px 15px 15px;
+}
+
+.popeach button {
+    width: 35%;
+    height: 35px;
+    justify-content: center;
+    font-weight: 550;
+    display: flex;
+    margin: 20px auto;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #451a03;
+    background-color: #d6d3d1;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popeach button:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+.popeach:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+/* MAIN */
+.maincontent {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.articletitle {
+    text-align: center;
+    padding-top: 105px;
+    font-size: 2.5rem;
+}
+
+.article {
+    display: flex;
+    background-color: #fafaf9;
+    padding: 30px;
+    margin: 0 15px 0 35px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.262);
+    height: 28%;
+}
+
+.article-image {
+    width: 160px;  /* Set the width of the image */
+    height: 125px;  /* Maintain aspect ratio */
+    margin: auto;  /* Space between image and text */
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.050);
+}
+
+.articlecontent {
+    flex: 1;  /* Allow the text section to take up the remaining space */
+    margin-left: 25px;
+    padding-bottom: 15px;
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article h2:hover {
+    color: #b45309;
+    cursor: pointer;
+    text-shadow: 5px 5px 10px #d6d3d160;
+}
+
+.article p {
+    font-size: 13px;
+}
+
+.article-meta {
+    display: flex;
+    font-size: 12px;
+    color: #777;
+}
+.article-meta span {
+    margin: 10px;
+    margin-left: 0;
+
+}
+
+.rightside {
+    width: 50%;
+    margin-right: 5%;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    height: 42rem;
+    box-shadow: 5px 5px 10px #00000033;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.leftcontact {
+    width: 55%;
+    height: 42rem;
+    padding: 4%;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.449);
+    color: #451a03;
+    align-content: center;
+    background-image: url(images/lcontact.png);
+}
+
+.git {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.git h2 {
+    font-size: 40px;
+}
+
+.gith h3 {
+    font-size: 25px;
+    padding: 0 0 0 15px;
+}
+
+.git p {
+    font-size: 13px;
+    padding: 0 35px 0 5px;
+    font-weight: 400;
+}
+
+.inputbox h3 {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 10px 4px 15px;
+}
+
+.inputbox input {
+    width: 90%;
+    height: 25px;
+    padding: 20px;
+    margin: 0 0 0 15px;
+    border: none;
+    color: #451a03;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.120);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.100);
+    font-family: poppins;
+}
+
+textarea {
+    width: 90%;
+    padding: 15px 15px 15px 20px;
+    font-family: Poppins;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.120);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+::placeholder {
+    color: #7777774b;
+}
+
+
+form button {
+    width: 90%;
+    height: 38px;
+    justify-content: center;
+    font-weight: 550;
+    margin: 15px 20px 20px 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #451a03;
+    background-color: rgba(0, 0, 0, 0.100);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background: #451a03;
+    color:  #f5f5f4;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+
+.rightcontact {
+    width: 45%;
+    padding: 2%;
+    border-radius: 0 10px 10px 0;
+    align-content: center;
+    background-image: url(images/bgcontact.png);
+}
+
+.rcontacts {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.262);
+}
+
+.rc, .rcc {
+    width: 35%;
+    align-content: center;
+    color: #451a03;
+}
+
+.contacts {
+    background-color: #fafaf9;
+    margin: 10px ;
+    padding: 10px;
+    text-align: center;
+    height: 8.5rem;
+    align-content: center;
+    border-radius: 12px;
+}
+
+.contacts i {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.contacts h3, .contacts p{
+    font-size: 12px;
+}
+
+.sendto {
+    text-decoration: none;
+    color: #451a03;
+}
+
+.contacts:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #00000033;
+}
+
+.socmeds {
+    text-decoration: none;
+    color: #451a03;
+}
+
+.socmeds:hover {
+    cursor: pointer;
+    text-shadow: 5px 5px 10px #00000033;
+    color: #b45309;
+}
+
+.socials {
+    padding: 22px;
+    margin-left: 20px;
+}
+
+.socials h3 {
+    padding-bottom: 10px;
+}
+
+.socials i {
+    padding: 5px;
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 15px;
+    margin: 10px;
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 1.4rem;
+    display: none;
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .profile-icon {
+        margin-right: 5px;
+        font-size: 22px;
+    }
+    
+    .navig ul a {
+       font-size: 14px; 
+       padding: 0 15px 0 10px;
+    }
+
+    .leftside {
+        justify-items: center;
+        margin: 0;
+        margin-top: 90px;
+    }   
+    
+    .leftside b {
+        font-size: 38px;
+    }
+
+    .leftside p {
+        font-size: 10px;
+    }
+
+    .svgg {
+        width: 105px;
+        height: auto;    
+    }
+
+    .searchbar {
+        margin-right: 15px;
+        height: 25px;
+    }
+
+
+    .first img {
+        height: 50%;
+        margin-top: 50px;
+    }
+
+    .populartitle, .articletitle {
+        font-size: 2rem;
+    }
+
+    .popular img {
+        height: 10rem;
+    }
+
+    .popeach h3 {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .popeach p, .article p {
+        font-size: 11px;
+    }
+
+    .popeach button {
+        width: fit-content;
+    }
+
+    .article {
+        margin-left: 25px;
+    }
+
+    .article h2 {
+        font-size: 15px;
+    }
+    
+    .article-meta {
+        font-size: 9px;
+        padding: 1px;
+    }
+
+    .article-image {
+        width: 130px;
+        height: 95px;
+    }
+
+    .contact {
+        height: 35rem;
+    }
+
+    .leftcontact, .rightcontact {
+        height: 35rem;
+    }
+
+    .gith h3, .contacts i, .socials i{
+        font-size: 20px;
+    }
+
+    .inputbox h3, .git p, .contacts p {
+        font-size: 10px;
+    }
+
+    .inputbox input {
+        height: 18px;
+    }
+
+    .git h2 {
+        font-size: 30px;
+    }
+
+    .contacts {
+        padding: 10px;
+        width: 95%;
+        height: 7rem;
+    }
+
+    .socials h3 {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .profile-icon {
+        margin-right: 5px;
+        font-size: 22px;
+    }
+    
+    .navig ul a {
+       font-size: 14px; 
+       padding: 0 10px 0 10px;
+    }
+
+    .leftside {
+        justify-items: center;
+        margin: 0;
+        margin-top: 90px;
+    }   
+    
+    .leftside b {
+        font-size: 38px;
+    }
+
+    .leftside p {
+        font-size: 10px;
+    }
+
+    .svgg {
+        width: 105px;
+        height: auto;    
+    }
+
+    .searchbar {
+        margin-right: 15px;
+        height: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 895px) {
+    #menu-btn{
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(270deg);
+    }
+
+    header {
+        padding: 10px;
+        position: fixed;
+        transition: top 0.3s;
+    }    
+
+    .navig {
+        width: 25%;
+        position: absolute;
+        top:90%; right:5px;
+        border-radius: 15px;
+        border: 1px solid rgba(173, 173, 173, 0.236);
+        background-color: #fafaf9;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navig ul {
+        flex-direction: column;
+        padding: 12px 0 0 5px;
+    }
+
+    .navig.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .svgg {
+        width: 85px;
+        height: auto;
+        padding-top: 3px;
+        margin: 0 5px 0 10px; 
+    }
+
+    .profile-icon {
+        display: none;
+    }
+
+    .proftxt {
+        display: block;
+    }
+
+    .navig ul a {
+        font-size: 14px;
+        padding: 7px 0 10px 0; 
+        margin: 0;
+        text-align: center;
+    }
+
+    .popeach button span, .leftside button {
+        font-size: 11px;
+    }
+
+    .populartitle {
+        padding-top: 105px;
+    }
+
+    .popular {
+        padding: 0;
+    }
+
+    .popeach {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .maincontent, .rightside {
+        margin: 0;
+    }
+
+    .article {
+        margin-left: 15px;
+        height: 33%;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .article-meta span {
+        margin: 1px;
+    }
+
+    .articlecontent {
+        align-content: center;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    .university {
+        margin-bottom: 105px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    #menu-btn{
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(270deg);
+    }
+    
+    header {
+        padding: 10px;
+        position: fixed;
+        transition: top 0.2s;
+    }
+
+    .navig {
+        width: 30%;
+        position: absolute;
+        top:90%; right:5px;
+        border-radius: 15px;
+        border: 1px solid rgba(173, 173, 173, 0.236);
+        background-color: #fafaf9;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navig ul {
+        flex-direction: column;
+        padding: 12px 0 0 5px;
+    }
+
+    .navig.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .svgg {
+        width: 85px;
+        height: auto;
+        padding-top: 3px;
+        margin: 0 5px 0 5px; 
+    }
+
+    /* Container */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .profile-icon {
+        display: none;
+    }
+
+    .proftxt {
+        display: block;
+    }
+
+    .first {
+        margin: 15px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .searchbar {
+        width: 200px;
+        margin-right: 15px;
+        height: 25px;
+    }
+
+    .navig ul a {
+       font-size: 14px;
+       padding: 7px 0 10px 0; 
+       margin: 0;
+       text-align: center;
+    }
+
+
+
+    .leftside {
+        justify-items: center;
+        margin: 0;
+        width: fit-content;
+    }   
+    
+    .leftside b {
+        font-size: 20px;
+    }
+
+    .leftside p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .first img {
+        height: 100%;
+        margin-top: 55px;
+    }
+
+    .popular, .pop, .second {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .populartitle, .articletitle {
+        font-size: 1.5rem;
+        padding-top: 15px;
+    }
+
+    .popular img {
+        height: 7.5rem;
+    }
+
+    .popeach {
+        width: 85%;
+        margin: 5px;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    .popeach h3 {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    .popeach p, .article p, .popeach button span, .leftside button, .leftcontact button {
+        font-size: 11px;
+    }
+
+    .popeach button {
+        width: fit-content;
+    }
+
+    .maincontent, .rightside {
+        margin: 0;
+        width: 90%;
+    }
+
+    .article {
+        margin: 10px 10px 10px 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .article h2 {
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .article-meta {
+        font-size: 9px;
+        padding: 1px;
+        display: block;
+    }
+
+    .article-image {
+        width: 120px;
+        height: 85px;
+
+    }
+
+    .contact {
+        height: fit-content;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .leftcontact, .rightcontact {
+        height: 29rem;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-top: 27px;
+        box-shadow: 5px 5px 10px #00000033;
+    }
+
+
+    .gith h3, .contacts i, .socials i{
+        font-size: 15px;
+    }
+
+    .inputbox h3, .git p, .contacts p {
+        font-size: 8px;
+    }
+
+    .inputbox input {
+        height: 10px;
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    textarea {
+        padding: 15px;
+        font-size: 10px;
+    }
+
+    .git h2 {
+        font-size: 20px;
+    }
+
+    .git {
+        padding-bottom: 10px;
+        padding-top: 5px;
+    }
+
+    .rcontacts {
+        padding-bottom: 10px;
+    }
+
+    .contacts {
+        padding: 5px;
+        width: 90%;
+        height: 6rem;
+    }
+
+    .contacts i {
+        padding-bottom: 0;
+    }
+
+    .socials h3 {
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .socials {
+        padding: 18px;
+    }
+
+    footer, .contacts h3 {
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
